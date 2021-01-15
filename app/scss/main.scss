@@ -140,21 +140,27 @@ header.header {
 	flex-direction: column;
 	text-align: center;
 	// top: 50%;
-	transform: translateY(50%);
+	// transform: translateY(50%);
 	&__description {
 		opacity: 0.5;
+		max-width: 1100;
+		margin-top: 5%;
 	}
 	&__title-section {
-		margin: auto 25%;
+		margin: auto;
+		max-width: 1100px;
 		h1 {
 			margin: 0;
-			white-space:normal;
 			font-size: 76px;
-			font-weight: semibold;
+			font-weight: 600;
+			line-height: 82px;
 		}
 	}
 	&__text {
-		margin: auto 17%;
+		margin: auto;
+		max-width: 1100px;
+		font-size: 24px;
+		font-weight: lighter;
 	}
 	&__ellipse {
 		.Ellipse_7 {
@@ -163,8 +169,11 @@ header.header {
 			width: 10px;
 			height: 11px;
 			position: absolute;
-		  }
+		}
 		  
+	}
+	&__svg {
+		opacity: 0.5;
 	}
 }
   
@@ -184,5 +193,6 @@ header.header {
 		color: #fff;
 		padding: 21px 24px;
 		cursor: pointer;
+		margin: 45px auto;
 	}
 }
