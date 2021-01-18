@@ -15,6 +15,7 @@ body {
 	font-family: Poppins;
 	overflow-x: hidden;
 	opacity: 1;
+	color: #fff;
 }
 .img-responsive {
 	display: block;
@@ -25,3 +26,12 @@ body {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}

@@ -1,0 +1,32 @@
+.footer {
+    background-color: rgb(44, 46, 133);
+    border-top: 1px solid rgba(255, 255, 255, 0.251);
+    padding: 24px 0;
+    .container {
+        display: flex;
+		justify-content: space-between;
+		margin: 0 48px;
+    }
+    .logo {
+        &__img {
+            margin-right: 9px !important;
+        }
+    }
+    &__social {
+        margin: auto;
+        font-size: 26px;
+    }
+    
+    &__menu {
+        text-align: right;
+        ul {
+            display: flex;
+        }
+    }
+    &__item {
+        padding-left: 24px;
+    }
+    
+}
+
+  
