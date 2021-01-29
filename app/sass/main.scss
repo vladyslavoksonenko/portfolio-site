@@ -2,7 +2,9 @@
 @import "libs";
 @import "base";
 @import "vars";
+@import "services";
 @import "footer";
+
 
 // Пользовательские стили
 
@@ -248,9 +250,98 @@ header.header {
 		}
 	}
 	&__img {
-		padding: 40px 0 0 0;
+		padding: 40px 0;
 	}
 }
+
+
+.reviews {
+	.container {
+		max-width: 1280px;
+		margin: auto;
+	}
+	&__quote {
+		z-index: -2;
+    position: absolute;
+    left: 10%;
+	}
+}
+
+.review {
+	border-radius: 6px;
+  background-color: rgb(57, 67, 195);
+	box-shadow: 0px 20px 45px 0px rgba(122, 135, 157, 0.06);
+	max-width: 870px;
+	max-height: 385px;
+	padding: 94px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 60px auto 45px auto;
+	&__photo {
+		position: absolute;
+		text-align: center;
+		top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+	}
+	&__text {
+		margin: 0;
+    font-size: 17px;
+		font-weight: 200;
+		text-align: center;
+	}
+	&__autor {
+    font-size: 17px;
+    text-align: center;
+		font-weight: bold;
+		margin: 50px auto;
+}
+}
+
+.slider {
+	&__buttons {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 140px;
+	}
+	&__btn-left {
+		border: 1px solid rgba(255, 255, 255, 0.5);
+    	border-radius: 100%;
+    	background: rgba(255, 255, 255, 0);
+    	color: #fff;
+    	font-size: 17px;
+		padding: 9px 14px 7px 12px;
+		margin: auto 5px;
+	}
+	&__btn-right {
+		border: 1px solid rgba(255, 255, 255, 0.5);
+    	border-radius: 100%;
+    	background: rgba(255, 255, 255, 0);
+    	color: #fff;
+    	font-size: 17px;
+		padding: 9px 12px 7px 14px;
+		margin: auto 5px;
+	}
+	&__btn-radio {
+		padding: 4px;
+		color: #fff;
+		background: rgba(255, 255, 255, 0.5);
+		opacity: 0.5;
+		border-radius: 100%;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		margin: auto 3px;
+		
+	}
+	.active {
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.9);
+		border: 1px solid rgba(255, 255, 255, 0.9);
+	}
+
+}
+
 
 
 

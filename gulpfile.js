@@ -29,28 +29,29 @@ gulp.task('js', function() {
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('app/js'))
-	.pipe(browserSync.reload({stream: true}));
+	.pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('scss', function() {
-	return gulp.src('app/scss/**/*.scss')
+gulp.task('sass', function() {
+	return gulp.src('app/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
 	// .pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.reload({stream: true}));
+	.pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('code', function() {
 	return gulp.src('app/**/*.html')
-	.pipe(browserSync.reload({ stream: true }))
+	.pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('watch', function() {
-	gulp.watch('app/sсss/**/*.sсss', gulp.parallel('scss'));
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
 	gulp.watch('app/*.html', gulp.parallel('code'));
+	gulp.watch('app/sass/*.scss', gulp.parallel('sass'));
+	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
 });
 
-gulp.task('default', gulp.parallel('scss', 'js', 'browser-sync', 'watch'));
+
+gulp.task('default', gulp.parallel('sass', 'js', 'browser-sync', 'watch'));

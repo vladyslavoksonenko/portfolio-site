@@ -1,5 +1,3 @@
-$(function() {
+console.log("hello");
 
-	// Custom JS
-
-});
+console.log("hello world");
