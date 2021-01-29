@@ -1,0 +1,61 @@
+.contact {
+  background-color: rgb(44, 46, 133);
+  padding: 111px 0;
+    .container {
+        max-width: 720px;
+        margin: auto;
+    }
+    &__content {
+        form div {
+            margin: auto;
+            padding: 7.5px 0;
+        }      
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input, textarea {
+      padding: 24px 50px;
+      width: 500px;
+      border: 2px solid rgba(255, 255, 255, 0.251);
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0);
+      color: #fff;
+      font-family: Poppins;
+      font-size: 17px;
+      
+    }
+    textarea {
+      max-width: 500px;
+      min-width: 500px;
+      height: 216px;
+      max-height: 216px;
+      min-height: 216px;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #fff;
+    }
+    input:focus, textarea:focus {
+      outline: 0px;
+    }
+    input#name {
+      background-image: url("img/icon-user.png"); 
+      background-repeat: no-repeat;
+      background-position: 22px 50%; 
+    }
+    input#email {
+      background-image: url("img/icon-email.png");
+      background-repeat: no-repeat;
+      background-position: 22px 50%; 
+    }
+    textarea#massage {
+      background-image: url("img/icon-massage.png");
+      background-repeat: no-repeat;
+      background-position: 22px 24px;
+    }
+
+    
+    
+}

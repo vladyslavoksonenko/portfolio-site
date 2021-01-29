@@ -2,7 +2,9 @@
 @import "libs";
 @import "base";
 @import "vars";
+@import "portfolio";
 @import "services";
+@import "contact";
 @import "footer";
 
 
@@ -44,7 +46,8 @@ header.header {
 	flex-basis: 30%;
 	.logo__img {
 		margin: auto 0;
-    	padding: 0px;
+		padding: 0px;
+		width: 200px;
     	margin-right: 32px;
     	color: #fff;
 	}
