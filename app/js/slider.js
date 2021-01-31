@@ -1,0 +1,1 @@
+let sliders = document.querySelectors(".slider");

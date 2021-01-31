@@ -19,9 +19,10 @@
         background-color: rgb(57, 67, 195);
         box-shadow: 0px 25px 35px 0px rgba(34, 34, 34, 0.11);
     }
-    &__about {
+    &__description {
         padding: 24px;
         text-align: left;
+        margin: auto;
     }
     &__icon {
         border-radius: 50%;
@@ -39,12 +40,25 @@
     &__title {
         font-size: 24px;
         font-weight: 400;
-        padding: 9px 0;
+        padding: 18px 0;
     }
 
     &__text {
         font-size: 17px;
         line-height: 1.882;
+        font-weight: 200;
+    }
+
+    &__tegs {
+        a {
+            font-size: 11px;
+            font-weight: 300;
+            border: 1px solid rgba(255, 255, 255, 0.251);
+            border-radius: 15px;
+            padding: 4px 12px;
+        }
+        margin: 40px auto;
+          
     }
     
       
